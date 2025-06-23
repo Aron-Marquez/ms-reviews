@@ -33,10 +33,17 @@ dependencies {
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+<<<<<<< HEAD
     runtimeOnly 'org.springframework.boot:spring-boot-docker-compose'
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
+<<<<<<< HEAD
     enabled = false
+=======
+    useJUnitPlatform()
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 }

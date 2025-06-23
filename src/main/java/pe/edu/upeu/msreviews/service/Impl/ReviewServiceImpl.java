@@ -2,7 +2,10 @@ package pe.edu.upeu.msreviews.service.Impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+<<<<<<< HEAD
 import pe.edu.upeu.msreviews.entity.EstadisticaReviews;
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 import pe.edu.upeu.msreviews.entity.Review;
 import pe.edu.upeu.msreviews.repository.IReviewRepository;
 import pe.edu.upeu.msreviews.service.IReviewService;
@@ -12,7 +15,11 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+<<<<<<< HEAD
 public class    ReviewServiceImpl implements IReviewService {
+=======
+public class ReviewServiceImpl implements IReviewService {
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 
     // usuarioClient.obtenerUsuarioPorId(review.getUsuarioId());
     // productoClient.obtenerProductoPorId(review.getProductoId());
@@ -67,9 +74,12 @@ public class    ReviewServiceImpl implements IReviewService {
     public List<Review> getReviewsByUserId(Long usuarioId) {
         return reviewRepository.findAllByUsuarioId(usuarioId);
     }
+<<<<<<< HEAD
 
     @Override
     public EstadisticaReviews obtenerEstadisticasPorProducto(Long productoId) {
         return reviewRepository.obtenerEstadisticasPorProducto(productoId);
     }
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 }

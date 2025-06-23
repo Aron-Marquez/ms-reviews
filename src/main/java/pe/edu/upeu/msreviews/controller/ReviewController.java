@@ -4,7 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+<<<<<<< HEAD
 import pe.edu.upeu.msreviews.entity.EstadisticaReviews;
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 import pe.edu.upeu.msreviews.entity.Review;
 import pe.edu.upeu.msreviews.repository.IReviewRepository;
 import pe.edu.upeu.msreviews.service.IReviewService;
@@ -37,10 +40,13 @@ public class ReviewController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+<<<<<<< HEAD
     @GetMapping("/estadisticas/{productoId}")
     public EstadisticaReviews obtenerEstadisticas(@PathVariable Long productoId) {
         return reviewService.obtenerEstadisticasPorProducto(productoId);
     }
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 
     @PutMapping("/{id}")
     public ResponseEntity<Review> UpdateReview(@PathVariable Long id, @RequestBody Review review) {

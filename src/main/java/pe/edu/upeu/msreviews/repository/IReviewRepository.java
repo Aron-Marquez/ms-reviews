@@ -1,8 +1,11 @@
 package pe.edu.upeu.msreviews.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+<<<<<<< HEAD
 import org.springframework.data.jpa.repository.Query;
 import pe.edu.upeu.msreviews.entity.EstadisticaReviews;
+=======
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
 import pe.edu.upeu.msreviews.entity.Review;
 
 import java.util.List;
@@ -15,6 +18,7 @@ public interface IReviewRepository extends JpaRepository<Review, Long> {
     List<Review> findAllByProductoId(Long productoId);
 
     List<Review> findAllByUsuarioId(Long usuarioId);
+<<<<<<< HEAD
 
     @Query("SELECT AVG(r.calificacion) FROM Review r WHERE r.productoId = :productoId")
     Double obtenerPromedioCalificacionPorProducto(Long productoId);
@@ -26,3 +30,6 @@ public interface IReviewRepository extends JpaRepository<Review, Long> {
     EstadisticaReviews obtenerEstadisticasPorProducto(Long productoId);
 }
 
+=======
+}
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760

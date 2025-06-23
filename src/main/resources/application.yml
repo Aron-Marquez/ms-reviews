@@ -1,12 +1,33 @@
+<<<<<<< HEAD
 spring:
   datasource:
     url: jdbc:oracle:thin:@RORO:1522/XE
     username: REVIEWS
     password: REVIEWS123
+=======
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ms-reviews
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: C##envios
+    password: envios123
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
     hibernate:
       ddl-auto: update
+<<<<<<< HEAD
     database-platform: org.hibernate.dialect.OracleDialect
     show-sql: true
+=======
+    show-sql: true
+    propiertes:
+      hibernate:
+        dialect:  org.hibernate.dialect.Oracle12cDialect
+>>>>>>> 5ba4c702286f17d12e029dd7047057fa237cd760
