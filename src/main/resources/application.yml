@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@RORO:1522/XE
+    username: REVIEWS
+    password: REVIEWS123
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.OracleDialect
+    show-sql: true

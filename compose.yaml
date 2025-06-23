@@ -1,0 +1,22 @@
+services:
+
+  oracle:
+    image: gvenzl/oracle-free:latest
+    container_name: RORO
+    ports:
+      - "1522:1521"
+    environment:
+      ORACLE_PASSWORD: secret               # Contraseña del usuario 'oracle'
+      APP_USER: REVIEWS              # Usuario que se creará automáticamente
+      APP_USER_PASSWORD: REVIEWS123   # Contraseña del usuario 'publicaciones'
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    networks:
+      - reviews-net
+
+volumes:
+  oracle-data:
+
+networks:
+  reviews-net:
+    driver: bridge
